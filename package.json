@@ -1,16 +1,22 @@
 {
-  "name": "react-redux-setup-get-started",
-  "version": "0.1.0",
-  "private": true,
+  "name": "redux-made-easy",
+  "version": "1.0.0",
+  "description": "A simple webpack config for my Redux Made Easy Series",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+  },
+  "author": "CodeWithTim",
+  "license": "ISC",
   "dependencies": {
-    "react": "^15.5.3",
-    "react-dom": "^15.5.3",
     "axios": "^0.15.3",
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
     "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.22.0",
     "babel-preset-stage-3": "^6.17.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
     "react-redux": "^5.0.2",
     "redux": "^3.6.0",
     "redux-logger": "^2.7.4",
@@ -19,12 +25,10 @@
     "webpack-dev-server": "^1.16.2"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb": "^14.0.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^3.0.2",
+    "eslint-plugin-react": "^6.9.0"
   }
 }

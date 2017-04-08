@@ -1,7 +1,8 @@
 import React from 'react';
 
 export default (props) => (
-    <div>
-        <h1>Hello</h1>
-    </div>
+  <div>
+    <h1>{props.data}</h1>
+  </div>
 );
+
