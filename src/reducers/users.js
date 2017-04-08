@@ -10,7 +10,7 @@ const initalState = {
 
 // REDCUER
 function usersReducer(state = initalState, action) {
-  let user
+  let users
   switch (action.type) {
     case 'FETCH_USER_PENDING':
       return { ...state, loading: true}
