@@ -1,12 +1,16 @@
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
 import logger from 'redux-logger';
 import promise from 'redux-promise-middleware';
 import usersReducer from './reducers/users';
+import userProfile from './reducers/userProfile';
 
 export default createStore(
-    usersReducer,
+    combineReducers({
+        usersReducer,
+        userProfile,
+    }),
     applyMiddleware(
-        //logger(),
+        logger(),
         promise()
     )
 );
