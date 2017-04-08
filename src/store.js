@@ -6,7 +6,7 @@ import usersReducer from './reducers/users';
 export default createStore(
     usersReducer,
     applyMiddleware(
-        logger(),
+        //logger(),
         promise()
     )
 );
